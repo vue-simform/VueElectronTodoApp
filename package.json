@@ -1,0 +1,47 @@
+{
+  "name": "electronvuetodoapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
+  "dependencies": {
+    "3.0.0": "^3.0.0",
+    "@fullcalendar/core": "^6.1.8",
+    "@fullcalendar/daygrid": "^6.1.8",
+    "@fullcalendar/vue3": "^6.1.8",
+    "browserify-fs": "^1.0.0",
+    "core-js": "^3.8.3",
+    "electron-builder": "^24.9.1",
+    "fullcalendar": "^6.1.8",
+    "path-browserify": "^1.0.1",
+    "vue-router": "^4.0.3",
+    "vuestic-ui": "^1.7.1",
+    "vuetify": "^3.3.6",
+    "vuex": "^4.0.0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^25.2.0",
+    "electron-devtools-installer": "^3.1.1",
+    "sass": "^1.63.6",
+    "sass-loader": "^10.1.1",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  }
+}
